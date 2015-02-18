@@ -3,12 +3,14 @@
 
 <head>
 	<title>Text Analyzer</title>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 
 <body>
 	<form>
 		<textarea id="text-area" rows="30" cols="100"></textarea>
 		<button id="submit-button" type="button" onclick="analyze()">Submit</button>
+		<button id="remove-button" type="button" onclick="removeText()">Remove Words</button>
 	</form>
 	<h3 id="results">Results</h3>
 <script src="analyzer.js"></script>
