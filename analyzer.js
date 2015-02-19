@@ -27,10 +27,12 @@ var simplify = {
 }
 
 var removeText = function(){
-	var text = document.getElementById('text-area').value;
+	var text = document.getElementById('text-area')
 	
-	var doThis = simplify.removeCommons(text);
-	text = doThis
+	var doThis = simplify.removeCommons(text.value);
+	console.log(doThis)
+	text.value = doThis
+
 }
 var analyze = function(){
 	var text = document.getElementById('text-area').value;
